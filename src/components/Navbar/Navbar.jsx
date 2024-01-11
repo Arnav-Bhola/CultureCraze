@@ -6,9 +6,12 @@ const Navbar = () => {
   return (
     <div className={styles["container"]}>
       <div className={styles["left"]}>
-        <h3 className={styles["brand"]}>
+        <Link
+          href='/'
+          className={styles["brand"]}
+        >
           <span>Culture</span>Craze
-        </h3>
+        </Link>
       </div>
       <div className={styles["links"]}>
         <Link

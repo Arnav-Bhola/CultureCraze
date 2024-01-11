@@ -1,3 +1,60 @@
 .container {
-  background-color: var(--color-dark-blue);
+  background-color: var(--color-white);
+  height: var(--footer-height);
+  border-top: solid #c1c1c1 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4rem;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+
+  div {
+    display: flex;
+    gap: 2.2rem;
+
+    a {
+      &:link,
+      &:visited {
+        text-decoration: none;
+        font-size: 2rem;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 600;
+        color: var(--color-blue);
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.brand {
+  color: var(--color-blue);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  font-style: normal;
+  line-height: normal;
+
+  span {
+    margin-left: 0.5rem;
+  }
+}
+
+.socials {
+  display: flex;
+  gap: 1.7rem;
+}
+
+.social {
+  width: 3rem;
+  height: 3rem;
+  fill: var(--color-dark-blue);
+  cursor: pointer;
 }

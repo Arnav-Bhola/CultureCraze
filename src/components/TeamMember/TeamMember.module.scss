@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  gap: 6rem;
+  padding: 0 6rem;
+  align-items: center;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .text-container {
+    gap: 1rem;
+  }
+
+  .socials {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    svg {
+      width: 3rem;
+      height: 3rem;
+      fill: var(--color-dark-blue);
+    }
+  }
+
+  img {
+    width: 50%;
+    height: 50%;
+  }
+
+  h2,
+  p {
+    color: var(--color-dark-blue);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 5.4rem;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 2.5rem;
+  }
+}
