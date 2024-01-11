@@ -1,3 +1,45 @@
 .container {
   background-color: var(--color-dark-blue);
+  height: var(--navbar-height);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4rem;
+}
+
+.brand {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  font-style: normal;
+  line-height: normal;
+
+  span {
+    color: var(--color-green);
+    margin-right: 0.5rem;
+  }
+}
+
+.links {
+  display: flex;
+  gap: 4rem;
+}
+
+.link {
+  &:visited,
+  &:link {
+    color: var(--color-white);
+    text-decoration: none;
+    text-transform: none;
+    font-size: 2rem;
+    font-family: "Mallanna", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+  }
+
+  &:hover {
+    text-decoration: underline solid var(--color-white);
+  }
 }

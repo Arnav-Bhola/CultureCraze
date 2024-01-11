@@ -1,0 +1,30 @@
+.container {
+  background-color: var(--color-blue);
+  height: calc(100vh - var(--navbar-height));
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+
+  .sub-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    gap: 2.5rem;
+  }
+}
+
+.heading {
+  color: var(--color-white);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 700;
+  font-size: 14rem;
+}
+
+.sub-heading {
+  color: var(--color-green);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "DM Sans", sans-serif;
+  font-size: 2.8rem;
+}
