@@ -1,4 +1,4 @@
-import TeamMember from "../../components/TeamMember/TeamMember";
+import TeamMember from "../../../components/TeamMember/TeamMember";
 
 import styles from "./page.module.scss";
 

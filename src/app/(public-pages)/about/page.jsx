@@ -1,6 +1,6 @@
-import WhoWeAre from "../../components/WhoWeAre/WhoWeAre";
-import TeamHighlight from "../../components/TeamHighlight/TeamHighlight";
-import WhatWeBelieve from "../../components/WhatWeBelieve/WhatWeBelieve";
+import WhoWeAre from "../../../components/WhoWeAre/WhoWeAre";
+import TeamHighlight from "../../../components/TeamHighlight/TeamHighlight";
+import WhatWeBelieve from "../../../components/WhatWeBelieve/WhatWeBelieve";
 
 import styles from "./page.module.scss";
 

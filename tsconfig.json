@@ -27,10 +27,10 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/app/page.jsx",
+    "src/app/(public-pages)/page.jsx",
     "src/app/layout.jsx",
-    "src/app/team/page.jsx",
-    "src/app/about/page.jsx"
+    "src/app/(public-pages)/team/page.jsx",
+    "src/app/(public-pages)/about/page.jsx"
   ],
   "exclude": ["node_modules"]
 }
