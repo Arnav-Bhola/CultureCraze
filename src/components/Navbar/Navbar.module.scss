@@ -8,6 +8,14 @@
   padding: 0 4rem;
 }
 
+.left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  user-select: none;
+  text-decoration: none;
+}
+
 .brand {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 700;
@@ -21,6 +29,11 @@
     color: var(--color-green);
     margin-right: 0.5rem;
   }
+}
+
+.logo {
+  width: 6rem;
+  height: 6rem;
 }
 
 .links {

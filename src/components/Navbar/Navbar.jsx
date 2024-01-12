@@ -1,18 +1,26 @@
 import Link from "next/link";
+import Image from "next/image";
+
+import logo from "../../assets/images/logo.png";
 
 import styles from "./Navbar.module.scss";
 
 const Navbar = () => {
   return (
     <div className={styles["container"]}>
-      <div className={styles["left"]}>
-        <Link
-          href='/'
-          className={styles["brand"]}
-        >
+      <Link
+        href='/'
+        className={styles["left"]}
+      >
+        <Image
+          className={styles["logo"]}
+          src={logo}
+          alt='logo'
+        />
+        <p className={styles["brand"]}>
           <span>Culture</span>Craze
-        </Link>
-      </div>
+        </p>
+      </Link>
       <div className={styles["links"]}>
         <Link
           className={styles["link"]}
