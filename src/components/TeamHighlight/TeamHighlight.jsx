@@ -3,7 +3,7 @@ import Image from "next/image";
 import TeamCard from "../Cards/TeamCard";
 
 import arnav from "../../assets/images/arnav.jpg";
-import aarav from "../../assets/images/aarav.jpg";
+import aarav from "../../assets/images/aarav.png";
 
 import styles from "./TeamHighlight.module.scss";
 

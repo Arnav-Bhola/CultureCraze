@@ -11,8 +11,7 @@ const TeamCard = () => {
       <div>
         <h4 className={styles["title"]}>Meet our team</h4>
         <p className={styles["text"]}>
-          Nunc congue nisi vitae suscipit tellus mauris. Ullamcorper a lacus vestibulum sed arcu non
-          odio.
+          Meet our team of dedicated individuals, passionate about cultural education.
         </p>
       </div>
       <p className={styles["link"]}>

@@ -10,7 +10,7 @@ const Footer = () => {
           Culture<span>Craze</span>
         </h3>
         <div>
-          <a href='https://www.google.com'>Contact</a>
+          <a href='https://forms.gle/5azM5rjLMiZWZUZQ8'>Contact</a>
           <Link href='/about'>About</Link>
           <Link href='/team'>Team</Link>
         </div>

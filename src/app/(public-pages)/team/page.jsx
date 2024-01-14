@@ -11,7 +11,7 @@ const TeamPage = () => {
       <div className={styles["members"]}>
         <TeamMember
           name='Aarav Singh'
-          text='Massa sapien faucibus et molestie ac. Tempus urna et pharetra pharetra massa massa ultricies. Eget magna fermentum iaculis eu non diam phasellus. In massa tempor nec feugiat nisl pretium. Eu turpis egestas pretium aenean pharetra. Suscipit adipiscing bibendum est ultricies integer quis auctor elit sed.'
+          text='Aarav is a freshman in New Jersey who has moved between India and the US many times in his life. He is all too familiar with the affects of culture shock, and wants to improve cultural awareness. He also has held executive positions in multiple non-profits, leading to him having extensive work experience for his age. He believes that along with Arnav, he can lead this organization to success.'
           imageFirst
           discord='iambaby_yoda'
           email='mailto:aaravsingh15.2020@gmail.com'
@@ -24,7 +24,6 @@ const TeamPage = () => {
           imageFirst={false}
           discord='xyz.arnav.io'
           email='mailto:arnav.bholausa@gmail.com'
-          instagram='https://www.instagram.com/xyz.arnav.io/'
           github='https://github.com/Arnav-Bhola'
           linkedin='https://www.linkedin.com/in/arnav-b-a1b05b26b/'
         />

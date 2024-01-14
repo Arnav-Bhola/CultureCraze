@@ -1,0 +1,86 @@
+.container {
+  height: calc(100vh - var(--navbar-height));
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 0 4rem;
+}
+
+.text {
+  width: 50%;
+}
+
+.graphic {
+  width: 50%;
+}
+
+.heading,
+.paragraph {
+  color: var(--color-dark-blue);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.heading {
+  font-weight: 600;
+  letter-spacing: -0.066rem;
+  font-size: 3.7rem;
+  margin-bottom: 2rem;
+}
+
+.paragraph {
+  font-size: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 6rem;
+}
+
+.user-controls {
+  display: flex;
+  align-items: stretch;
+}
+
+.input {
+  padding: 1rem 2rem;
+  border: solid 2px #000000;
+  outline: none;
+  font-size: 2rem;
+  width: 38rem;
+}
+
+.submit {
+  outline: none;
+  border: none;
+  background-color: var(--color-blue);
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.submit-icon {
+  fill: var(--color-white);
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.error-text {
+  color: var(--color-red);
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.4rem;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.image {
+  width: 100%;
+  height: 90%;
+}
