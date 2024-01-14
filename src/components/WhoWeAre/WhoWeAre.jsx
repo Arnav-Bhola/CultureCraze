@@ -13,13 +13,15 @@ const WhoWeAre = () => {
           </div>
           <h1 className={styles["heading"]}>Discover our story</h1>
           <div className={styles["text"]}>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>CultureCraze is a company fueled to ignite cultural awareness and understanding.</p>
             <p>
-              Morbi tincidunt ornare massa eget egestas purus viverra. Vitae semper quis lectus
-              nulla at volutpat diam ut. Congue eu consequat ac felis donec. Amet porttitor eget
-              dolor morbi non arcu risus quis
+              Our hearts sank when we discovered that there isn&apos;t any other company dedicated
+              to cultural education that addresses the challenges that arise due to culture shock
+              and difficulties adjusting for travellers.
             </p>
-            <p>Sit amet consectetur adipiscing elit duis tristique sollicitudin nibh.</p>
+            <p>
+              CultureCraze solves this problem in a convenient, engaging, and easy-to-learn manner.
+            </p>
           </div>
         </div>
         <Image

@@ -7,7 +7,7 @@ const notFound = () => {
     <div className={styles["container"]}>
       <Card
         title='Not found!'
-        text="Unfortunately, the page that you were looking for doesn't exist. Feel free to contact our team for further issues"
+        text="Unfortunately, the page that you were looking for doesn't exist. Feel free to contact our team for further issues."
         linktext='Back to home page'
         link='/'
       />

@@ -7,7 +7,7 @@ const Cards = () => {
     <div className={styles["container"]}>
       <Card
         title='About us'
-        text='CultureCraze is a company that  addresses the lack of cultural awareness prevalent today in a convenient, engaging, and easy-to-learn manner.'
+        text='CultureCraze is a company that aims to tackle the current lack of cultural awareness in an enjoyable and easily accessible manner.'
         link='/about'
         linktext='More about us'
       />

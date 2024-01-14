@@ -8,7 +8,7 @@ const Header = () => {
       <div className={styles["sub-container"]}>
         <h1 className={styles["heading"]}>Culture Craze</h1>
         <h2 className={styles["sub-heading"]}>
-          lorem ipsum dolor sit amet | totally cool text | 100+ countries
+          discover diverse cultures | uncover cultural insights | ignite learning
         </h2>
         <Link
           href='/landing'

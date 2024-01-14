@@ -20,7 +20,9 @@ const LandingPage = () => {
 
   const emailInputHandler = (e) => {
     setEmail(e.target.value);
-    isEmailValid(true);
+    if (emailRef.current) {
+      isEmailValid(true);
+    }
   };
 
   const keyPressHandler = (e) => {
@@ -57,7 +59,7 @@ const LandingPage = () => {
     try {
       await addDoc(collectionRef, data);
     } catch (error) {
-      console.error("Error adding document:", error);
+      alert("There was an error while adding you to the waitlist. Please try again later!");
     }
 
     setEmail("");
@@ -69,18 +71,27 @@ const LandingPage = () => {
     <div className={styles["container"]}>
       <div className={styles["text"]}>
         <h2 className={styles["heading"]}>Sign up now!</h2>
-        <p className={styles["paragraph"]}>
-          Our services aren’t ready right now so I’m going to write all this text to continue this
-          because in the real website it should prob be this big so I’m the best, I hope there’s no
-          doubts about that weeee!!
-        </p>
+        <div className={styles["textcontainer"]}>
+          <p className={styles["paragraph"]}>
+            Welcome to CultureCraze, we&apos;re on a mission to bridge the gap caused by culture
+            shock and the challenges faced by travelers adjusting to new environments.
+            Unfortunately, our services aren&apos;t quite ready yet, but we&apos;re working
+            tirelessly to bring you a convenient solution.{" "}
+          </p>
+          <p className={styles["paragraph"]}>
+            Your cultural journey is important to us, and we&apos;d love to keep you in the loop.
+            Simply drop your email in the form below, and be the first to experience the world of
+            CultureCraze when we launch! Get ready to embark on a cultural adventure like never
+            before!
+          </p>
+        </div>
         <form
           className={styles["form"]}
           on
         >
           <div className={styles["user-controls"]}>
             <input
-              placeholder='Join our waitlist'
+              placeholder='Join our waitlist!'
               className={styles["input"]}
               ref={emailRef}
               value={email}
