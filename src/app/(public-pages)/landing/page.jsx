@@ -2,6 +2,10 @@
 
 import { useRef, useState } from "react";
 import Image from "next/image";
+
+import { db } from "../../../firebase-setup/firebase-config";
+import { collection, addDoc } from "firebase/firestore";
+
 import styles from "./page.module.scss";
 
 import image from "../../../assets/images/landing.svg";
@@ -11,11 +15,18 @@ const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const LandingPage = () => {
   const [email, setEmail] = useState("");
   const [emailIsValid, isEmailValid] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const emailRef = useRef();
 
   const emailInputHandler = (e) => {
     setEmail(e.target.value);
     isEmailValid(true);
+  };
+
+  const keyPressHandler = (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+    }
   };
 
   const emailBlurHandler = () => {
@@ -28,7 +39,7 @@ const LandingPage = () => {
     }
   };
 
-  const submitHandler = (e) => {
+  const submitHandler = async (e) => {
     e.preventDefault();
 
     if (!emailPattern.test(email)) {
@@ -36,7 +47,22 @@ const LandingPage = () => {
       return;
     }
 
+    setIsLoading(true);
+    isEmailValid(false);
+
+    const data = { email: email };
+
+    const collectionRef = collection(db, "Emails");
+
+    try {
+      await addDoc(collectionRef, data);
+    } catch (error) {
+      console.error("Error adding document:", error);
+    }
+
     setEmail("");
+    isEmailValid(true);
+    setIsLoading(false);
   };
 
   return (
@@ -48,7 +74,10 @@ const LandingPage = () => {
           because in the real website it should prob be this big so I’m the best, I hope there’s no
           doubts about that weeee!!
         </p>
-        <form className={styles["form"]}>
+        <form
+          className={styles["form"]}
+          on
+        >
           <div className={styles["user-controls"]}>
             <input
               placeholder='Join our waitlist'
@@ -57,9 +86,10 @@ const LandingPage = () => {
               value={email}
               onChange={emailInputHandler}
               onBlur={emailBlurHandler}
+              onKeyPress={keyPressHandler}
             ></input>
             <button
-              type='submit'
+              type='button'
               className={styles["submit"]}
               onClick={submitHandler}
             >
@@ -83,7 +113,7 @@ const LandingPage = () => {
               !emailIsValid ? styles["error-text"] : styles["error-text"] + " " + styles["hidden"]
             }
           >
-            Invalid email entered!
+            {isLoading ? "Loading..." : "Invalid email entered!"}
           </p>
         </form>
       </div>
