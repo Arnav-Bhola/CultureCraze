@@ -20,7 +20,7 @@ const TeamPage = () => {
         />
         <TeamMember
           name='Arnav Bhola'
-          text='Arnav, a freshman in Connecticut, brings a lot to the table with his extensive international experience, having moved between India, the USA, and Canada over 10 times. This has given him firsthand insights into the challenges of adaptation, fueling his commitment to improve cultural awareness and easing the impact of culture shock.  Alongside his passion for programming, Arnav has held leadership positions in multiple non-profit organizations dedicated to education. His background and shared vision with Aarav leads him to lift this company to success. '
+          text='Arnav, a freshman in Connecticut, brings a lot to the table with his extensive international experience, having moved between India, the USA, and Canada 8 times. This has given him firsthand insights into the challenges of adaptation, fueling his commitment to improve cultural awareness and easing the impact of culture shock.  Alongside his passion for programming, Arnav has held leadership positions in multiple non-profit organizations dedicated to education. His background and shared vision with Aarav leads him to lift this company to success. '
           imageFirst={false}
           discord='xyz.arnav.io'
           email='mailto:arnav.bholausa@gmail.com'
