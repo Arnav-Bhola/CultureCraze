@@ -65,6 +65,7 @@ const LandingPage = () => {
     setEmail("");
     isEmailValid(true);
     setIsLoading(false);
+    alert("We have added you to our waitlist!");
   };
 
   return (

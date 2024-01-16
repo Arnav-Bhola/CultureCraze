@@ -15,9 +15,9 @@ const WhoWeAre = () => {
           <div className={styles["text"]}>
             <p>CultureCraze is a company fueled to ignite cultural awareness and understanding.</p>
             <p>
-              Our hearts sank when we discovered that there isn&apos;t any other company dedicated
-              to cultural education that addresses the challenges that arise due to culture shock
-              and difficulties adjusting for travellers.
+              Our hearts sank when we discovered that there weren&apos;t any other companies
+              dedicated to cultural education and addressing the challenges which arise due to
+              culture shock.
             </p>
             <p>
               CultureCraze solves this problem in a convenient, engaging, and easy-to-learn manner.
