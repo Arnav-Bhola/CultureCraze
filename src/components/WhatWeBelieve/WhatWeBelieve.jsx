@@ -3,6 +3,7 @@ import value1 from "../../assets/images/asia.png";
 import value2 from "../../assets/images/nsamerica.png";
 import value3 from "../../assets/images/europe.png";
 import value4 from "../../assets/images/africa.png";
+import global from "../../assets/images/global.png";
 
 import styles from "./WhatWeBelieve.module.scss";
 
@@ -26,34 +27,11 @@ const WhatWeBelieve = () => {
           </p>
         </div>
         <div className={styles["values"]}>
-          <div className={styles["value"]}>
-            <Image
-              src={value1}
-              alt='Value 1'
-              className={styles["value-image"]}
-            />
-          </div>
-          <div className={styles["value"]}>
-            <Image
-              src={value2}
-              alt='Value 2'
-              className={styles["value-image"]}
-            />
-          </div>
-          <div className={styles["value"]}>
-            <Image
-              src={value3}
-              alt='Value 3'
-              className={styles["value-image"]}
-            />
-          </div>
-          <div className={styles["value"]}>
-            <Image
-              src={value4}
-              alt='Value 4'
-              className={styles["value-image"]}
-            />
-          </div>
+          <Image
+            src={global}
+            alt='world map'
+            className={styles["value-image"]}
+          />
         </div>
       </div>
     </div>
