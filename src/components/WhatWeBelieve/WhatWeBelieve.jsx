@@ -1,8 +1,4 @@
 import Image from "next/image";
-import value1 from "../../assets/images/asia.png";
-import value2 from "../../assets/images/nsamerica.png";
-import value3 from "../../assets/images/europe.png";
-import value4 from "../../assets/images/africa.png";
 import global from "../../assets/images/global.png";
 
 import styles from "./WhatWeBelieve.module.scss";
