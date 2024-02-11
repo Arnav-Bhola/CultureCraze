@@ -11,7 +11,7 @@ const Header = () => {
           discover diverse cultures | uncover cultural insights | ignite learning
         </h2>
         <Link
-          href='/landing'
+          href='/quizzes'
           className={styles["button"]}
         >
           Get Started

@@ -1,22 +1,23 @@
 import Link from "next/link";
 
-import styles from "./TeamCard.module.scss";
+import styles from "./QuizzesCard.module.scss";
 
-const TeamCard = () => {
+const QuizzesCard = () => {
   return (
     <Link
-      href={"/team"}
+      href={"/quizzes"}
       className={styles["card"]}
     >
       <div>
-        <h4 className={styles["title"]}>Meet our team</h4>
+        <h4 className={styles["title"]}>Try our quizzes</h4>
         <p className={styles["text"]}>
-          Meet our team of dedicated individuals, passionate and dedicated towards cultural
-          education.
+          Explore our curated quizzes to deepen your cultural knowledge. Our platform, offers a
+          professional and convenient way to enhance cultural understanding. Start now to engage in
+          a broaden your awareness of cultural education in a focused approach!
         </p>
       </div>
       <p className={styles["link"]}>
-        Visit our team page
+        See all quizzes
         <svg
           xmlns='http://www.w3.org/2000/svg'
           fill='none'
@@ -36,4 +37,4 @@ const TeamCard = () => {
   );
 };
 
-export default TeamCard;
+export default QuizzesCard;
