@@ -30,7 +30,8 @@
     "src/app/(public-pages)/page.jsx",
     "src/app/layout.jsx",
     "src/app/(public-pages)/team/page.jsx",
-    "src/app/(public-pages)/about/page.jsx"
+    "src/app/(public-pages)/about/page.jsx",
+    "src/app/(public-pages)/landing/page.jsx"
   ],
   "exclude": ["node_modules"]
 }
