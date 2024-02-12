@@ -40,7 +40,7 @@ const Footer = () => {
         </a>
         <a
           className={styles["social-link"]}
-          href='mailto:arnav.bholausa@gmail.com,aaravsingh15.2020@gmail.com'
+          href='mailto:culturecrazedc@gmail.com'
         >
           <svg
             xmlns='http://www.w3.org/2000/svg'
