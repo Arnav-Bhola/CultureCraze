@@ -55,3 +55,9 @@
     transform: translateY(-0.5rem);
   }
 }
+
+.cta {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}

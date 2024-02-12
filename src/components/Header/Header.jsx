@@ -10,12 +10,20 @@ const Header = () => {
         <h2 className={styles["sub-heading"]}>
           discover diverse cultures | uncover cultural insights | ignite learning
         </h2>
-        <Link
-          href='/quizzes'
-          className={styles["button"]}
-        >
-          Get Started
-        </Link>
+        <div className={styles["cta"]}>
+          <Link
+            href='/quizzes'
+            className={styles["button"]}
+          >
+            Get Started
+          </Link>
+          <Link
+            href='/landing'
+            className={styles["button"]}
+          >
+            Join our Waitlist
+          </Link>
+        </div>
       </div>
     </div>
   );
